@@ -189,12 +189,12 @@ const CardContainer: React.SFC<CardContainerProps> = ({
           role="group"
           aria-label="Basic example"
         >
-          {data.characters.info.prev === null || undefined ? null : (
+          {data.episodes.info.prev === null || undefined ? null : (
             <button className="btn btn-info" onClick={() => handlePage("prev")}>
               <span>prev</span>
             </button>
           )}
-          {data.characters.info.next === null ||
+          {data.episodes.info.next === null ||
           undefined ||
           busqueda === "" ? null : (
             <button
@@ -230,12 +230,12 @@ const CardContainer: React.SFC<CardContainerProps> = ({
           role="group"
           aria-label="Basic example"
         >
-          {data.characters.info.prev === null || undefined ? null : (
+          {data.locations.info.prev === null || undefined ? null : (
             <button className="btn btn-info" onClick={() => handlePage("prev")}>
               <span>prev</span>
             </button>
           )}
-          {data.characters.info.next === null ||
+          {data.locations.info.next === null ||
           undefined ||
           busqueda === "" ? null : (
             <button
